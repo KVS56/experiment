@@ -1,2 +1,9 @@
-print("hello world")
-print("tu tu du du max ver5tappen")
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'hello world'
+
+def flying_dutchman():
+    return 'tu tu du du max ver5tappen'
